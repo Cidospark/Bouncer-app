@@ -12,7 +12,7 @@ body {
   font-family: arial;
   letter-spacing: 0.5px;
   color: #333333;
-  background:#eee;
+  background:rgba(179, 218, 247, 0.301);
   margin: 0px;
 }
 h1,
@@ -67,6 +67,7 @@ a {
 }
 .top-bar {
   border-bottom: 1px solid var(--lightgrey);
+  background: #fff;
 }
 
 .inliner {
@@ -181,7 +182,9 @@ a {
 .deals-widget.box2,
 .deals-widget.box3 {
   overflow: hidden;
-  box-shadow: 0px 0px 15px 0.4px #ccc;
+  border-left:1px solid rgba(135, 207, 235, 0.767);
+  border-top:1px solid rgba(135, 207, 235, 0.767);
+  border-bottom:1px solid rgba(135, 207, 235, 0.767);;
 }
 
 .deals-widget.box2 .img-cover,
@@ -297,20 +300,18 @@ a {
 }
 .bestseller-widget {
   flex: 2 1 215px;
-  border: 3px solid var(--lightgrey);
   border-radius: 3px;
   box-sizing: border-box;
   padding: 20px;
   margin-bottom: 20px;
   margin-right: 20px;
-  box-shadow: 0px 0px 20px 0.4px var(--lightgrey);
   transition: box-shadow, 0.3s;
   background:#fff;
   border-radius:6px;
   box-shadow: 0px 0px 20px 0.4px #ddd;
 }
 .bestseller-widget:hover {
-  box-shadow: 0px 0px 20px 0.4px var(--grey);
+  box-shadow: 0px 0px 20px 0.4px rgb(144, 188, 245);
 }
 
 .bestseller-widget .top {
