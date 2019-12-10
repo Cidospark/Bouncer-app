@@ -165,7 +165,8 @@ a {
 }
 .deals-widget {
   height: 280px;
-  flex: 2 1 300px;
+  min-height: 300px;
+  flex: 2 1 200px;
   background: var(--lightgrey);
 }
 .deals-widget:first-child {
@@ -179,6 +180,7 @@ a {
 .deals-widget.box2,
 .deals-widget.box3 {
   overflow: hidden;
+  box-shadow: 0px 0px 15px 0.4px #555;
 }
 
 .deals-widget.box2 .img-cover,
@@ -228,6 +230,7 @@ a {
   padding-left: 20px;
   color: var(--white);
   opacity: 0.85;
+  width: 50%;
 }
 .deals-widget.box3 .info {
   right: 0px;
@@ -235,7 +238,7 @@ a {
   padding: 0px;
   margin: 0px;
   text-align: left;
-  width: 60%;
+  width: 40%;
   padding-left: 20px;
   letter-spacing: 1px;
   line-height: 25px;
@@ -264,16 +267,21 @@ a {
   display: flex;
   justify-content: space-between;
   align-self: top;
-    color:#333;
-    padding:0px 20px;
+  color: #333;
+  padding: 0px 20px;
 }
 .deals-widget.box2 .info .logo {
-    padding-top: 0px;
-    margin-top: 0px;
-    color:#333;
+  padding-top: 0px;
+  margin-top: 0px;
+  color: #333;
 }
-.deals-widget.box2 .info .price{color:#333;}
-.deals-widget.box2{border-left:1px solid #ccc; border-right:1px solid #ccc; }
+.deals-widget.box2 .info .price {
+  color: #333;
+}
+.deals-widget.box2 {
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
 /***********************best-seller***************/
 .best-seller {
   padding-top: 20px;
@@ -396,6 +404,17 @@ a {
 /*****************desktop view*****************/
 
 @media all and (min-width: 479px) {
+  .deals-widget {
+    flex: 2 1 300px;
+  }
+
+  .deals-widget.box1 .info {
+    width: 90%;
+  }
+  .deals-widget.box3 .info {
+    width: 60%;
+  }
+
   .wrapper,
   .top-wrapper-right div,
   .menu,
