@@ -181,7 +181,7 @@ a {
 .deals-widget.box2,
 .deals-widget.box3 {
   overflow: hidden;
-  box-shadow: 0px 0px 15px 0.4px #eee;
+  box-shadow: 0px 0px 15px 0.4px #ccc;
 }
 
 .deals-widget.box2 .img-cover,
@@ -305,7 +305,9 @@ a {
   margin-right: 20px;
   box-shadow: 0px 0px 20px 0.4px var(--lightgrey);
   transition: box-shadow, 0.3s;
-  background:var(--white)
+  background:#fff;
+  border-radius:6px;
+  box-shadow: 0px 0px 20px 0.4px #ddd;
 }
 .bestseller-widget:hover {
   box-shadow: 0px 0px 20px 0.4px var(--grey);
