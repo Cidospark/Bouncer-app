@@ -16,5 +16,3 @@ Technologies used so far:
 ## See snapshots    OR [View on netlify https://xenodochial-banach-564f1c.netlify.com/]
 
 ![Slider](./asset/Snapshot1.png)
-![Slider](./asset/Snapshot2.png)
-![Slider](./asset/Snapshot3.png)
