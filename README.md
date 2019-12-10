@@ -1,4 +1,4 @@
-## Still under construction
+# Still under construction
 
 An online shopping platform for electronics.
 
@@ -13,7 +13,7 @@ Technologies used so far:
 - CSS
 - Page assets (Images)
 
-## see previews
+## See snapshots    OR [View on netlify https://xenodochial-banach-564f1c.netlify.com/]
 
 ![Slider](./asset/Snapshot1.png)
 ![Slider](./asset/Snapshot2.png)
