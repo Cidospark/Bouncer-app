@@ -1,4 +1,4 @@
-# An online store Demo.
+# Online Store Web-Design.
 
 ## Live Demo [https://xenodochial-banach-564f1c.netlify.com/]
 
