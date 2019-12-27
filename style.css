@@ -513,6 +513,39 @@ a {
 .featured-prods h1{
   font-size: 22px;
 }
+/*******************footer*******************/
+.subscribe{
+  background-color: #fff;
+  width:90%;
+  height:35px;
+  margin:0px auto;
+  border-radius:2px;
+  overflow: hidden;
+  border:1px solid var(--blue);
+  margin:40px auto;
+}
+.subscribe .frm-subsribe{
+display: flex;
+  justify-content: space-between;
+  flex-flow: row nowrap;
+}
+.subscribe input{
+  flex:2 1 90%;
+}
+.subscribe input,.subscribe button {
+  border:0px;
+  padding:10px;
+  outline:0px;
+}
+.subscribe button {
+  background-color: var(--blue);
+  color:white; 
+  border:0px;
+  width:80px;
+  cursor: pointer;
+}
+
+
 /*****************desktop view*****************/
 
 @media all and (min-width: 479px) {
@@ -560,6 +593,9 @@ a {
   }
   .small-widget .small-widget-widget{
     padding:10px;
+  }
+  .subscribe{
+    width:40%;
   }
 }
 @media all and (min-width: 600px) {
