@@ -471,6 +471,32 @@ a {
   left:-130px;
   top:0px;
 }
+/********************lastest news**************/
+.latest-news{
+  padding:40px 0px;
+}
+.latest-news .news-widgets-cover{
+  box-sizing: border-box;
+  padding:20px;
+}
+.latest-news img{
+  width: 50%;
+  margin-right: 20px;
+  max-width:150px;
+  min-width: 100px;;
+}
+.latest-news .news-widget{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding:5px;
+}
+.latest-news .news-date{
+  color:var(--grey)
+}
+.latest-news .news{
+  font-size: 13px;
+}
 /*****************desktop view*****************/
 
 @media all and (min-width: 479px) {
@@ -516,6 +542,9 @@ a {
   .services .free-shipping, .services .refund, .services .support{
     flex:2 1 150px;
   }
+  .latest-news .news-widget{
+    padding:10px;
+  }
 }
 @media all and (min-width: 600px) {
   .wrapper {
@@ -558,7 +587,6 @@ a {
   .shop-now img{
     top:-80px;
   }
-  
 }
 
 @media all and (min-width: 900px) {
@@ -577,6 +605,9 @@ a {
   .shop-now .ad-desc{
     box-sizing: border-box;
     padding:50px 50px;
+  }
+  .news-widgets-cover{
+    display: flex;
   }
 }
 
