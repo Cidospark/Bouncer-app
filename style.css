@@ -389,10 +389,10 @@ a {
   line-height: 30px;
   text-align: center;
 }
-.bestseller-widget .bottom .prices span:first-child {
+ .prices span:first-child {
   color: var(--red);
 }
-.bestseller-widget .bottom .prices span:last-child {
+ .prices span:last-child {
   color: var(--grey);
   text-decoration: line-through;
   padding: 10px;
@@ -590,6 +590,7 @@ a {
     top:-50px;
   }
 }
+
 @media all and (min-width: 700px) {
   .slider-description {
     top: 40%;
