@@ -441,11 +441,35 @@ a {
 }
 /****************services**********************/
 .services{
-  height:400px;
   position:relative;
   z-index: 2;
-  background-color: var(--white);
+  background-color: rgb(217, 236, 250);
+  padding:80px 0px;
 
+}
+.services .wrapper{
+  display: flex;
+  justify-content:space-between;
+}
+.services .free-shipping, .services .refund, .services .support{
+  flex:2 1 240px;
+  text-align: center;
+  margin:20px 30px;
+}
+.services p{
+  line-height: 30px;
+  font-size: 13.5px;
+}
+.services .img-van, .services .img-refund, .services .img-support{
+  width: 70px;
+  height:70px;
+  overflow: hidden;
+  margin :0px auto;
+}
+.services .img-support img{
+  position:relative;
+  left:-130px;
+  top:0px;
 }
 /*****************desktop view*****************/
 
@@ -488,6 +512,9 @@ a {
   }
   .shop-now img{
     width:80%;
+  }
+  .services .free-shipping, .services .refund, .services .support{
+    flex:2 1 150px;
   }
 }
 @media all and (min-width: 600px) {
@@ -568,7 +595,7 @@ a {
   }
   .shop-now img{
     height: 800px;
-    padding-right:50px;
+    padding-right:100px;
     top:-80px;
   }
   .deals{
@@ -579,5 +606,10 @@ a {
   .slider-description {
     top: 65%;
     width: 32%;
+  }
+}
+@media all and (min-width: 1500px) {
+  .services .free-shipping, .services .refund, .services .support{
+    flex:2 1 340px;
   }
 }
