@@ -443,7 +443,7 @@ a {
 .services{
   position:relative;
   z-index: 2;
-  background-color: rgb(217, 236, 250);
+  background-color: rgb(232, 243, 252);
   padding:80px 0px;
 
 }
@@ -471,31 +471,47 @@ a {
   left:-130px;
   top:0px;
 }
-/********************lastest news**************/
-.latest-news{
+/********************small widgets**************/
+.small-widget{
   padding:40px 0px;
+  background-color: white;
+  margin:0px;
 }
-.latest-news .news-widgets-cover{
+.small-widget .small-widget-cover{
   box-sizing: border-box;
   padding:20px;
 }
-.latest-news img{
+.small-widget img{
   width: 50%;
   margin-right: 20px;
   max-width:150px;
   min-width: 100px;;
 }
-.latest-news .news-widget{
+.small-widget .small-widget-widget{
   display: flex;
   justify-content: flex-start;
   align-items: center;
   padding:5px;
 }
-.latest-news .news-date{
+.small-widget .small-widget-date{
   color:var(--grey)
 }
-.latest-news .news{
+.small-widget .small-widget-text{
   font-size: 13px;
+}
+
+.featured-prods{
+  margin-top:0px;
+  padding-top:60px;
+  background-color: rgb(232, 243, 252);
+}
+.featured-prods img{
+  border:1px solid #e4e4e4;
+  padding:4px 0px;
+  border-radius:2px;
+}
+.featured-prods h1{
+  font-size: 22px;
 }
 /*****************desktop view*****************/
 
@@ -542,7 +558,7 @@ a {
   .services .free-shipping, .services .refund, .services .support{
     flex:2 1 150px;
   }
-  .latest-news .news-widget{
+  .small-widget .small-widget-widget{
     padding:10px;
   }
 }
@@ -606,7 +622,7 @@ a {
     box-sizing: border-box;
     padding:50px 50px;
   }
-  .news-widgets-cover{
+  .small-widget-cover{
     display: flex;
   }
 }
