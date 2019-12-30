@@ -1,4 +1,4 @@
-# Responsive WebApp
+# Responsive design
 
 Online Store.
 

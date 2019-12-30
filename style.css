@@ -99,6 +99,9 @@ a {
 .twitter-bg {
   background-color: var(--blue);
 }
+.mobile-small {
+  display: none;
+}
 .mobile-medium {
   display: none;
 }
@@ -108,6 +111,7 @@ a {
 /********************************************************************/
 .top-bar .wrapper {
   justify-content: space-between;
+  flex-flow: row wrap;
 }
 
 .top-wrapper-right div {
@@ -535,6 +539,7 @@ a {
   max-width: 150px;
   min-width: 100px;
 }
+
 .small-widget .small-widget-widget {
   display: flex;
   justify-content: flex-start;
@@ -817,6 +822,10 @@ footer {
   .rights {
     margin: 20px 0px;
   }
+  .mobile-small {
+    display: inline-block;
+  }
+  
 }
 
 @media all and (min-width: 700px) {
@@ -860,6 +869,9 @@ footer {
   .small-widget-cover {
     display: flex;
   }
+  .bestseller-widget{
+    width: 30%;
+  }
 }
 
 @media all and (min-width: 1150px) {
@@ -895,5 +907,8 @@ footer {
   .services .refund,
   .services .support {
     flex: 2 1 340px;
+  }
+  .bestseller-widget{
+    width: 23%;
   }
 }
