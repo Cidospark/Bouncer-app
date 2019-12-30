@@ -99,11 +99,11 @@ a {
 .twitter-bg {
   background-color: var(--blue);
 }
-.mobile-medium{
+.mobile-medium {
   display: none;
 }
-.mobile-large{
-  display:none;
+.mobile-large {
+  display: none;
 }
 /********************************************************************/
 .top-bar .wrapper {
@@ -135,6 +135,7 @@ a {
   align-items: center;
   flex-flow: column;
   padding-bottom: 20px;
+  display: none;
 }
 .menu a {
   padding: 10px;
@@ -323,29 +324,44 @@ a {
   padding-top: 20px;
 }
 .bestseller-showcase {
-  padding: 30px;
-  flex-flow: column;
+  flex-flow: wrap;
+  justify-content: flex-start;
+  padding: 10px;
+  padding-left: 20px;
 }
-.best-seller .menu a {
-  text-transform: lowercase;
-  text-transform: capitalize;
-}
+
 .bestseller-widget {
-  flex: 2 1 215px;
+  margin: 10px;
+  margin-left: 0px;
+  margin-right: 12px;
+  width: 45.3%;
   border-radius: 3px;
   box-sizing: border-box;
-  padding: 20px;
-  margin-bottom: 20px;
-  margin-right: 20px;
+  padding: 10px 5px;
   transition: box-shadow, 0.3s;
   background: #fff;
   border-radius: 6px;
   box-shadow: 0px 0px 20px 0.4px #ddd;
 }
+.prod-name {
+  font-size: 10px;
+  line-height: 15px;
+}
+.bottom .stars {
+  font-size: 10px;
+}
+
+.bottom .prices {
+  font-size: 12px;
+}
+
+.best-seller .menu a {
+  text-transform: lowercase;
+  text-transform: capitalize;
+}
 .bestseller-widget:hover {
   box-shadow: 0px 0px 20px 0.4px rgb(144, 188, 245);
 }
-
 .bestseller-widget .top {
   position: relative;
 }
@@ -359,6 +375,7 @@ a {
   opacity: 0;
   transition: opacity 0.3s linear;
   z-index: 2;
+  display: none;
 }
 .hot-badge {
   background-color: var(--red);
@@ -389,7 +406,7 @@ a {
 }
 
 .bestseller-widget .top {
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 .bestseller-widget .buttons span {
@@ -404,13 +421,14 @@ a {
   line-height: 50px;
   margin: 5px;
 }
+
 .bestseller-widget .buttons span:hover {
   box-shadow: 0px 0px 4px 0.4px var(--blue);
 }
 
 .bestseller-widget .bottom {
   border-top: 2px solid #f9f9f9;
-  padding-top: 20px;
+  padding-top: 5px;
   line-height: 30px;
   text-align: center;
 }
@@ -423,7 +441,7 @@ a {
   padding: 10px;
 }
 .bestseller-widget .bottom .stars {
-  padding-top: 20px;
+  padding-top: 5px;
 }
 
 .load-more {
@@ -522,11 +540,11 @@ a {
   justify-content: flex-start;
   align-items: center;
   padding: 5px;
-  cursor:pointer;
-  transition:transform, linear .2s;
+  cursor: pointer;
+  transition: transform, linear 0.2s;
 }
 .small-widget .small-widget-widget:hover {
-  box-shadow: 0px 0px 8px .4px #ddf;
+  box-shadow: 0px 0px 8px 0.4px #ddf;
 }
 .small-widget .small-widget-date {
   color: var(--grey);
@@ -688,6 +706,9 @@ footer {
   .bestseller-showcase {
     flex-flow: row wrap;
   }
+  .menu {
+    display: block;
+  }
 
   .slider-navigations {
     justify-content: space-between;
@@ -697,15 +718,12 @@ footer {
     top: 50%;
   }
   .shop-now {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row-reverse;
     box-sizing: border-box;
     padding: 0px 40px;
     border: 0px solid red;
   }
   .shop-now .ad-desc {
-    padding-top: 15%;
+    padding-bottom: 15%;
   }
   .shop-now img {
     width: 80%;
@@ -720,6 +738,23 @@ footer {
   }
   .subscribe {
     width: 40%;
+  }
+  .bestseller-widget {
+    margin-left: 5px;
+    padding-top: 20px;
+  }
+  .bestseller-widget .bottom {
+    padding: 20px;
+  }
+  .bestseller-widget .prod-name,
+  .bestseller-widget .stars {
+    font-size: 15px;
+  }
+  .bestseller-widget .stars {
+    margin: 10px;
+  }
+  .bestseller-widget .prices {
+    font-size: 18px;
   }
 }
 @media all and (min-width: 600px) {
@@ -744,11 +779,21 @@ footer {
     font-size: 35px;
   }
   .shop-now {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    box-sizing: border-box;
+    padding: 0px 40px;
+    border: 0px solid red;
     height: 350px;
   }
   .shop-now img {
     top: -50px;
   }
+  .shop-now .ad-desc {
+    padding-top: 15%;
+  }
+
   .top-footer {
     width: 100%;
     display: flex;
@@ -787,7 +832,7 @@ footer {
   .shop-now img {
     top: -80px;
   }
-  .mobile-medium{
+  .mobile-medium {
     display: block;
   }
 }
@@ -808,6 +853,9 @@ footer {
   .shop-now .ad-desc {
     box-sizing: border-box;
     padding: 50px 50px;
+  }
+  .shop-now .ad-desc {
+    padding-bottom: 15%;
   }
   .small-widget-cover {
     display: flex;
@@ -832,7 +880,7 @@ footer {
     padding-right: 100px;
     top: -80px;
   }
-  .mobile-large{
+  .mobile-large {
     display: block;
   }
 }
