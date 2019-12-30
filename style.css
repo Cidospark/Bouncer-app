@@ -761,6 +761,9 @@ footer {
   .bestseller-widget .prices {
     font-size: 18px;
   }
+  .mobile-small {
+    display: inline-block;
+  }
 }
 @media all and (min-width: 600px) {
   .wrapper {
@@ -822,10 +825,6 @@ footer {
   .rights {
     margin: 20px 0px;
   }
-  .mobile-small {
-    display: inline-block;
-  }
-  
 }
 
 @media all and (min-width: 700px) {
@@ -869,7 +868,7 @@ footer {
   .small-widget-cover {
     display: flex;
   }
-  .bestseller-widget{
+  .bestseller-widget {
     width: 30%;
   }
 }
@@ -908,7 +907,7 @@ footer {
   .services .support {
     flex: 2 1 340px;
   }
-  .bestseller-widget{
+  .bestseller-widget {
     width: 23%;
   }
 }
