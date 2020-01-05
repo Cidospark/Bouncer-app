@@ -13,3 +13,16 @@ const cacheAssets = [
     , 'asset/Snapshot1.png', 'asset/Snapshot2.png', 'asset/Snapshot3.png'
     , 'asset/visa.png', 'asset/western-union.png'
 ];
+
+// Call the install event
+self.addEventListener("install", () => {
+    console.log("SW is installed");
+    e.waitUntil(
+        caches
+            .open(cacheName)
+            .then(cache => {
+                cache.addAll(cacheAssets);
+            })
+            .then(() => self.skipWaiting())
+    )
+})
