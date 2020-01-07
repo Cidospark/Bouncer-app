@@ -33,7 +33,7 @@ const cacheAssets = [
 
 // Call the install event
 self.addEventListener("install", e => {
-  console.log("SW is installed");
+  //console.log("SW is installed");
   e.waitUntil(
     caches
       .open(cacheName)
@@ -46,7 +46,7 @@ self.addEventListener("install", e => {
 
 // call activate event
 self.addEventListener("activate", e => {
-  console.log("SW is activated");
+  //console.log("SW is activated");
   // remove unwanted caches
   e.waitUntil(
     // a promise object of all cachenames will be
@@ -69,7 +69,7 @@ self.addEventListener("activate", e => {
 
 // call fetch event
 self.addEventListener("fetch", e => {
-  console.log("SW: Fetching");
+  //console.log("SW: Fetching");
 
   e.respondWith(fetch(e.request).catch(() => caches.match(e.request)));
 });
